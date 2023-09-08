@@ -1,4 +1,4 @@
-# AgileSoftware2022_Credit
+# Reportado Agile
 
 <img src= "https://github.com/SJLEE411/Reportado-Agile/blob/main/Reportado/views/sampleimg.png" alt="sample image">
 Welcome to Reportado Financial Analysis tool.
