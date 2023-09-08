@@ -1,0 +1,1440 @@
+commit c5006979676808d92a95cb8bfab72469d8ee529a
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Sat Sep 3 15:48:30 2022 +0200
+
+    PDF ready
+    
+    Everything works, all is displayed
+
+commit 31c39d8949c20ae82e91843cb326d85a2c9ee720
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Sat Sep 3 08:53:16 2022 -0400
+
+    Re-adding chart rendering code
+
+commit 989636bbb5002f896c2afe6c2991f71b24a1a84f
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Sep 3 12:44:39 2022 +0200
+
+    Update analysis.html
+
+commit 1f405fb406ee95e8ece6d3f48173656ee237a567
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Sep 3 12:30:17 2022 +0200
+
+    Create UserGuide_Final_createPDF.pdf
+    
+    Updated user guide
+
+commit 547dc4223afbc08e3440b164ec2c411203c6c04d
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Sep 3 12:19:31 2022 +0200
+
+    Update FinancialStatements_input_V12.xlsx
+
+commit 06909792a279d74a690f84e3b63fc7dab5e19ed9
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Sep 3 12:42:44 2022 +0800
+
+    minor changes
+
+commit ec4b8aa2aafa23ddd3a20cfdde534217ad90125a
+Author: Lyrel <80076472+Lyrel@users.noreply.github.com>
+Date:   Sat Sep 3 06:00:31 2022 +0200
+
+    Final changes in PDF report
+    
+    This is ready
+
+commit 76f60825119c716f8ecf8f28596c24009621f1e1
+Merge: 6fbaab26 b33e4a9f
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Sep 3 10:59:34 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 6fbaab2600ddb4d49c65ee912158620948d101ca
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Sep 3 10:53:01 2022 +0800
+
+    minor changes
+
+commit b33e4a9f219624e3d2a52d92c94c0b4bd9b04a42
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Fri Sep 2 20:01:23 2022 +0200
+
+    Content page on PDF report is updated
+
+commit bb4e7b0f9ad46ae4b1bbdb9e7abb83f09acc4518
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Fri Sep 2 19:07:36 2022 +0200
+
+    Added charts and intro page to PDF report
+    
+    Still ongoing
+
+commit c33bf8d827f21ddaa4509aebae5928ba796b24af
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Thu Sep 1 09:54:10 2022 -0400
+
+    Added titles to charts, cleaned up, and added remaining charts
+
+commit 67cfb1d5efa70ff624cc07da8ed9b4f6b13ef317
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Wed Aug 31 09:27:51 2022 -0400
+
+    Fixed sales chart data and added profit chart
+
+commit a29cf0a41819679edf71956c9069fdc860c47806
+Merge: 91812a5d 90e6d2f1
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Aug 30 23:04:03 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 91812a5d8342fc37a19748d7c491537ba9158dd5
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Aug 30 23:01:45 2022 +0800
+
+    add comma separators to number in the report
+
+commit 90e6d2f13c7685952e0fb8a070ca0bf292b6db2b
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Tue Aug 30 09:48:18 2022 -0400
+
+    Correcting chart generation to allow new generation on resubmits
+
+commit 1af89f28a34068b11c976ca958df59484d50c8c4
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Tue Aug 30 12:53:09 2022 +0200
+
+    Delete contact.php
+
+commit 1748ad53ef25f538f89c7f5918b62e0234d3f2c0
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Tue Aug 30 12:52:19 2022 +0200
+
+    User guide
+
+commit 7c40766d7767fa2b115d60a19b59fb8490b34868
+Author: bevwingfield <37134576+bevwingfield@users.noreply.github.com>
+Date:   Tue Aug 30 11:15:08 2022 +0200
+
+    Update README.md
+    
+    Update README.md
+
+commit d67ee0923b9a553ad2281c1198aab53ede6c9585
+Author: Wesley Fang <107345441@qq.com>
+Date:   Mon Aug 29 23:34:55 2022 +0800
+
+    display the real industry name user chooses
+
+commit dff6bc410f418912d260b749ad85fc021c16a8c3
+Author: Wesley Fang <107345441@qq.com>
+Date:   Mon Aug 29 22:40:01 2022 +0800
+
+    hide Next button
+    add negative value permission to accumulated profit/loss
+
+commit dcc83e3b88ed3e2f8faa3c7d189c9846114c30c6
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Mon Aug 29 11:47:28 2022 +0200
+
+    Profitability ratios
+    
+    Changed profitability ratios. Not *100 (as percentage)
+
+commit 36764f2c4114971dd63b92934b7e6bf5fc8f5e1b
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Mon Aug 29 08:20:32 2022 +0200
+
+    Update analysisStyle.css
+    
+    simple CSS to company info
+
+commit 33009746fbc49f8109b56a8a446147d124b9e0d4
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Aug 28 09:51:12 2022 +0800
+
+    modify excel(Finance cost -> Finance Cost)
+    minor changes on forecast year title (2023 ->2023F)
+
+commit b63a066f035230430f3a49c0da0c6d094950067e
+Merge: 882fbe18 69a458d9
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Aug 28 09:37:30 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 69a458d9824b81e425d5a6d68d494e214e07d50d
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Sat Aug 27 23:44:47 2022 +0200
+
+    Ratio and ratio comparison result transfer to PDF
+    
+    Some checks are needed
+
+commit 882fbe18d66c2db305d76851ed019dba3b769755
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Aug 27 22:02:11 2022 +0800
+
+    minor modification
+
+commit 08398df51745379acf8b61b784c3763a338169f5
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 27 15:09:17 2022 +0200
+
+    Update analysis.html
+
+commit a27c9a182f55861198abcfbbc2ec641253bcb22d
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 27 15:07:24 2022 +0200
+
+    Create FinancialStatements_input_V12.xlsx
+
+commit f4659ab86ab25b639f47dc70531699c281e4e2e3
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 27 13:31:15 2022 +0200
+
+    Update dataModel.js
+    
+    Error on operating margin calculation
+
+commit facefd3c5904194ff3fabcda0c5fe546940839e5
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 27 13:26:45 2022 +0200
+
+    excel changes
+
+commit 0120781a7ea7ea1fd30fd88ff3868d11598648c1
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Aug 27 12:22:28 2022 +0800
+
+    add functionality to unify the format of user Info (capitalization)
+    add display controll on user Info
+
+commit 04a44287b0a3b8f2419801035a47e0bdbcad6324
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 27 05:54:47 2022 +0200
+
+    UPDATE Excel - v.11
+
+commit 5abf6eee2aaf1e6daea7e08931fc1dbda95f6c98
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Aug 27 11:31:16 2022 +0800
+
+    add ratio comparison functionality in displaying the results in the report
+
+commit dfb5cf280f8deb36fca79901251f519e8946fae2
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Fri Aug 26 18:22:53 2022 +0200
+
+    Updated data transfer from JS to PDF for Balance sheet and Income statement
+    
+    Ratio page and charts is not yet done
+
+commit 0d15afaa16fe0157ba4718f81bcaea7531f50456
+Author: Wesley Fang <107345441@qq.com>
+Date:   Fri Aug 26 23:15:13 2022 +0800
+
+    delete logo input area
+    modify ratios format in the report (underscore to capitalized)
+
+commit 943db317db5583705b92098b9cbfd0146fd03cb8
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Aug 24 23:05:36 2022 +0800
+
+    modification of excel upload and data populating
+
+commit 66ac3fb8a599b107f89a2e050604449a8981ae11
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Aug 24 22:48:47 2022 +0800
+
+    modification of ratioComparison, now if any errors of the original ratios,
+    it will show 'N/A' correctly.
+
+commit 02bded1633b9752f0e3acb08c19fae7f8d7af5b3
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Aug 24 22:20:01 2022 +0800
+
+    minor changes
+
+commit 651fad529cf51fc124e8fa64bdc42a300f486bed
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Aug 24 22:10:01 2022 +0800
+
+    minor changes on the excel populating functionality.
+
+commit bc1f3e59df10595601dcfc3b7dd9f2eee8501dd6
+Merge: 114e37fa 348233c4
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Aug 24 22:00:17 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 114e37fac6359f754a6c318933362e97ad8f8e18
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Aug 24 21:59:04 2022 +0800
+
+    amend typos
+    modify invalid data check for ratios
+
+commit 348233c4917c90ea364b728034c0909f0e0b5a42
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 24 15:57:48 2022 +0200
+
+    Update FinancialStatements_input_V10.xlsx
+    
+    Let us try again
+
+commit f23a8d49162897b502eb91e70343d271e0141bf9
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 24 15:57:03 2022 +0200
+
+    Update FinancialStatements_input_V10.xlsx
+    
+    Another change ....
+
+commit dd0baec01f55025d0cbd26d97f0c63fdf0e1ef5a
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 24 15:48:41 2022 +0200
+
+    Update FinancialStatements_input_V10.xlsx
+
+commit fb9f52ce14ef2264421e5f62c1abca1330bc6f1e
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 24 09:02:11 2022 +0200
+
+    Update FinancialStatements_input_V10.xlsx
+
+commit 984e5dfbc62d97b46ce97d3277c2ab4a7b460a02
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 24 08:30:19 2022 +0200
+
+    Excel update element names
+
+commit 9f4027944ea6caf193b55a66a718e6e03542562e
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Aug 24 00:00:39 2022 +0800
+
+    parse the data and convert it into right format from the excel inputs
+    add functionality to populate input fields on the page from excel inputs
+
+commit 94b8d953de123023b81ddcdd68c3001b3e1056c0
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Tue Aug 23 04:58:39 2022 +0200
+
+    changes
+
+commit 150baf8a964455cc0211b03a4fd9b7e74a191990
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Aug 23 02:03:47 2022 +0800
+
+    adding data comparing functionality to return bette||worse||inline||NA
+    according to different ratios comparison
+
+commit d6307c3af97c8c2b368c52b7fd50cedac002f033
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Mon Aug 22 10:52:10 2022 +0200
+
+    Ratio_check sheet changes
+    
+    Changes to excel - ratio check sheet and other minor validation checks
+
+commit 1f31df1cf86dce4c5c0f7272bd06b0d9832c9470
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Mon Aug 22 10:17:30 2022 +0200
+
+    Update dataModel.js
+    
+    Changed all names of ratios - this is need to have consistence across our ratio analysis tool
+
+commit 18fe5a7fd9802776ae296528adb9779945860be7
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Fri Aug 19 09:34:53 2022 -0400
+
+    Updated xlsx parser to handle new excel file and added handling for manual input when user does not choose an industry
+
+commit 3318e046ac1514ae38349b8af79aee9ad1a30881
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 17 08:17:04 2022 +0200
+
+    Update arith.js
+    
+    More commenting
+
+commit 15792bd45584cd188039c7b88a47e61fe9ad1682
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 17 08:09:32 2022 +0200
+
+    Update arith.test.js
+    
+    Commenting - is part of the testing process
+
+commit 5abb5747d2c1d2e864b89c702d4037104487fec7
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Tue Aug 16 10:05:13 2022 +0200
+
+    .. more tweaks to Excel - always issue
+
+commit 4dd912768298d641749b0f8737c11342ed1cf2b9
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Tue Aug 16 09:48:06 2022 +0200
+
+    Create FinancialStatements_input.xls
+
+commit 9149f86d40f4568addc90ea64cd54203d23ae2f2
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Tue Aug 16 09:48:02 2022 +0200
+
+    Delete FinancialStatements_input.xls
+
+commit 05f10964d3a011c2be9e91b1ff18a1f86d4c37e1
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Tue Aug 16 09:47:33 2022 +0200
+
+    Version 8 - Excel
+    
+    I have once again found bugs ...
+    Some changes.
+    Have now removed macros again.  Will try before we submit.
+
+commit 39f64e01cca537b261aee547ce20a1fc001a245f
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Aug 16 11:01:49 2022 +0800
+
+    minor changes
+
+commit fe1d1a91f4af82a45be8b7fb02ffd1c2a204edaa
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Aug 16 10:58:45 2022 +0800
+
+    control the display order of BS and IS;
+    fix bugs of incomestatement object;
+
+commit 4527579a4ebf532681ff42ff162b55b629b5155c
+Merge: be7a14fb 3692e68b
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Aug 16 08:30:10 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit be7a14fb42e487fe0ca5b54dd9013d07447956ed
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Aug 16 08:29:29 2022 +0800
+
+    minor adjustment
+
+commit 3692e68be8d7ad5ca14f77404a4a3450b9b638cf
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Mon Aug 15 13:43:27 2022 +0200
+
+    Update arith.test.js
+
+commit 8564ae1140fc4f10e3674057c8eff0195bc62ad0
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Mon Aug 15 11:50:56 2022 +0200
+
+    Unit Test and Ratio calcs fixed
+    
+    Small errors in my ratio code
+
+commit a3ebc3fdb6f768b663685683ba61a31087757b91
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Mon Aug 15 11:29:19 2022 +0200
+
+    UNIT testing
+    
+    Using jest - we do our unit testing
+    Specifically, the ratios are calculated using arithmetic operations.
+    These are all tested. And all ratios now use these arithmetic functions to be calculated
+
+commit 9e8014a77003d120bff5502f89cbeb3d12667f64
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Aug 14 23:52:06 2022 +0800
+
+    some bugs fixed
+
+commit 69fe05d3e747d6969bcb8e0e89073ec859808555
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sun Aug 14 17:29:21 2022 +0200
+
+    Delete Ratios_Input.xlsx
+
+commit b407158a9bbeae820e737be6516c2010e65a5e51
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Aug 14 23:09:50 2022 +0800
+
+    fix bugs of when user choose FY2 and the user object BS/IS only keeps FY1;
+    When user submit, turn the fiscal year1 and fiscal year2 value into the actual years;
+    Updating report area;
+
+commit 008c9bbb43d43c7de52bdc15a16ac5d16a096ed1
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Sun Aug 14 09:40:58 2022 +0200
+
+    work with app.js
+    
+    Made some changes in the code that generates pdf
+
+commit 00ae5a2abfe2180f8ba1b4e39b0519bb4a9cb189
+Merge: a74d190b 8ce502b0
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Sat Aug 13 17:22:33 2022 +0200
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit a74d190bb77f532fea3514dd126f1c4a54d487f6
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Sat Aug 13 17:20:50 2022 +0200
+
+    Added default values for input fields
+    
+    Company name, description and financial values are now have default values. You still need to choose industry and manually type 2200 for Sales in 2021
+
+commit 8ce502b0452a5f909f54f4ad103c1e9fad16c610
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 13 16:16:26 2022 +0200
+
+    Another edit to Excel upload doc
+
+commit fd549a4bb45785becf79c477ace2fc57387f3607
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 13 16:06:39 2022 +0200
+
+    User Excel update
+    
+    Changes to the Excel upload file -
+    - Validation (decimals, non negative)
+    - Macros to clear cells
+
+commit 9f4cd16893484d43347786ad130348fbcba85cc7
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 13 12:12:44 2022 +0200
+
+    Update index.html
+    
+    Functional email and tel tag for contact us section
+
+commit 768962cca013902fa9f09ca6263aa40f21ee2a33
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Sat Aug 13 11:54:37 2022 +0200
+
+    Update index.html
+    
+    Changing index user test
+
+commit 21ac6169a811a5025117592aee60dcc74f07971b
+Author: sodoc1 <shsj01@gmail.com>
+Date:   Fri Aug 12 03:08:17 2022 -0600
+
+    commenting out main.js from analysis page
+    
+    Glightbox error shown in console when main.js added, Analysis page works without main.js. Excluding main.js for now.
+
+commit bfaf6f88fcdd24e40490b08a87ed53593cb29ba5
+Author: Wesley Fang <107345441@qq.com>
+Date:   Thu Aug 11 22:38:23 2022 +0800
+
+    adding function that can recursively extract nested object to its deepest level.
+    this will be used to extract ratios and compare with industrial ratios.
+
+commit b7514c7ee1826f52d4cccb218a4799bf7df89d21
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Thu Aug 11 12:37:11 2022 +0200
+
+    Update analysis.html
+    
+    Changes to the upload/download buttons on analysis.html
+
+commit 650eca63f823256a53b7ae7c210846feb9bcf96f
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Thu Aug 11 12:21:02 2022 +0200
+
+    Update analysis.html
+    
+    Fixed navbar on analysis page
+    The links now work.
+
+commit c152d67e6ec14455eaf1e6c483abbe0866b43f57
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Thu Aug 11 12:17:39 2022 +0200
+
+    Update index.html
+    
+    Changes to
+    - links on index.html
+    - wording and usability on homepage
+
+commit 77b532c5044c2963f38fccc298bc9f842a1495d4
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Thu Aug 11 09:30:25 2022 +0200
+
+    Revert "Removed some industry averages that do not provide info"
+    
+    This reverts commit 214d7f86c888f517d4f9323a332d7b8e46c7278a.
+
+commit 214d7f86c888f517d4f9323a332d7b8e46c7278a
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 10 12:04:24 2022 +0200
+
+    Removed some industry averages that do not provide info
+    
+    Not sure where to remove this on the server side
+
+commit abf27fe7e5aab7cd73a66d6085f26bb730110db6
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 10 11:37:31 2022 +0200
+
+    Update main.js
+    
+    Trying to get rid of error on main.js // analysis throwing an error
+
+commit d7cae7dcff5655eea68cec1f04c95016259fd603
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 10 11:36:51 2022 +0200
+
+    Updated Ratios
+    
+    Interest Coverage should include Other income
+    Made all profitability ratios as %
+    All activity ratios are represented in days
+    Minor changes to errors
+
+commit 9d76dc288289e885f9537486b454ccf6790dc038
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Wed Aug 10 11:35:24 2022 +0200
+
+    Removed Years we are not including
+
+commit 445e8812311d08162a374ecf6067ab52867a2158
+Author: sodoc1 <shsj01@gmail.com>
+Date:   Tue Aug 9 13:50:58 2022 -0600
+
+    small change
+    
+    back to top button on analysis.html
+
+commit faccecfd523d820469176127c91294caa40ac5f1
+Author: sodoc1 <shsj01@gmail.com>
+Date:   Tue Aug 9 01:14:21 2022 -0600
+
+    small change
+    
+    Fixed header animation main.js added to analysis.html
+
+commit 24eef73ae6243b8d564271ab23902dbe5817e668
+Author: sodoc1 <shsj01@gmail.com>
+Date:   Tue Aug 9 01:06:11 2022 -0600
+
+    small change
+    
+    visual for analysis
+
+commit 0e14ac90ccb6064b6fc133080e95a91d99ba11ea
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Mon Aug 8 10:27:56 2022 -0400
+
+    Installed chart.js and made first chart out of user data
+
+commit 1eec754dad465a6d4e749737b9b39b961cee51f6
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Sun Aug 7 16:15:28 2022 -0400
+
+    Added parsing for industry from both manual and excel uploads and created database queries for those industries and returned the data to the client
+
+commit 5ab496611c68fcf7e3f3140b86fae0e3b3265bf9
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Aug 7 18:13:37 2022 +0800
+
+    fix bugs of user input check, now it can tell whether user has complete inputs or leave some fields blank.
+    other minor changes
+
+commit e5d26d247a0ba69760751ed3d41cab894f48120c
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Aug 7 18:04:50 2022 +0800
+
+    check files and apply DRY(DO NOT REPEAT YOURSELF) by applying functions to multiple place regarding input column titles, calculations etc
+    fix bugs of retaining column value when user changes years of report
+
+commit 79013980a4c7fa35deb15f3f732ea0f4d6cc7fdd
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Aug 6 17:07:28 2022 +0800
+
+    update logic regarding when user choose 2 years and then decide to only keep
+    the later year (2 years t0 1 year)and then changes mind again to 2 years
+      1 if the later year is not the last fiscal year available, then we allow
+      user to add a new year on its current fiscal year
+      2 if the later year is the last fiscal year, then we limit user's choice
+      on the years of report to only 1 (as it is the last available fiscal year)
+
+commit 3f80644030a7cb845e0d2f5e5e347a54e7433552
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Aug 6 15:36:48 2022 +0800
+
+    update logic when user choose last year:
+      1 years of report automatically changes to 1
+      2 the financial input and report table change accordingly
+    adjust the financial data info area display
+
+commit 66319cb81fa6e1caf549388f46b6826852bba483
+Merge: c9257339 1a78806d
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Aug 6 12:42:49 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit c92573391ae4a73a3f506866f10695536b140cb1
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Aug 6 12:25:38 2022 +0800
+
+    add option for user to choose which report year to keep(2 years=>1 year)
+    also the input column and the report table will change according to which year user chooses
+
+commit 1a78806d6dbec6dee6697dde7bcccafba209e164
+Author: sodoc1 <shsj01@gmail.com>
+Date:   Fri Aug 5 21:22:16 2022 -0600
+
+    Small update before visual update
+
+commit e385681caaef2708a335196cdecf9e6c9b7e3d82
+Author: sodoc1 <shsj01@gmail.com>
+Date:   Fri Aug 5 17:03:11 2022 -0600
+
+    Jest added to json
+
+commit 2d79c698b4aae07057ad486d710037b4fe82ef20
+Author: sodoc1 <shsj01@gmail.com>
+Date:   Fri Aug 5 16:56:52 2022 -0600
+
+    Jest installed
+
+commit dcce4681695b1554d26f1a0f7f09c1800571f7b5
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Thu Aug 4 13:44:48 2022 +0200
+
+    Changes/update to definitions
+
+commit 29fd708b575d433b66448d338d582251e4abb489
+Author: “Beverley <bev.wingfield@gmail.com>
+Date:   Thu Aug 4 13:39:06 2022 +0200
+
+    CSS formats for Ratios
+    
+    Added format for ratios
+
+commit 62242cb9edbd4a89bfc508c6c64517ece008ed98
+Author: bevwingfield <37134576+bevwingfield@users.noreply.github.com>
+Date:   Tue Aug 2 16:21:51 2022 +0200
+
+    Create README.md
+    
+    Read Me for Our Team Reportado Website.
+
+commit 341b30618a977ab517a89b6f6456c56593b8de61
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Mon Aug 1 14:01:40 2022 -0400
+
+    Added post method to manual input submit and added response to both manual input submit and file submit
+
+commit f9277855efd50b3443bfccb1cd9f1cd4a0bf1d99
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Jul 31 13:06:33 2022 +0800
+
+    minor changes for table feature(pseudo class)
+
+commit e16eb3d8d483a0c8f872d9917ff66ba3f92d91bb
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Jul 31 12:39:55 2022 +0800
+
+    minor corrections of wrong spelling;
+    add example features of report table for the units (by applying css selector)
+
+commit d7c0a117a2db5e10714b81387ce380aa3a9b61ba
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Sat Jul 30 16:42:30 2022 -0400
+
+    Added downloader for excel file, file uploader for completed file, and code to handle file and post it to the server
+
+commit 44523e43565527d8a74a28a4f3ab568ed3166df0
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 30 13:02:53 2022 +0200
+
+    Tweaks on description and columns alignments
+    
+    Add: subscript and CSS for hover notification
+    Add: Description (user-ability)
+    Removed: Old code // refactored
+    Update: me-auto on class for columns - to align them
+
+commit 503796c4fd321a34758cab011bc060550eff7b90
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 30 16:49:24 2022 +0800
+
+    add table style: striped and hover effct to give user better UX
+
+commit 16b0e2201930a65dd6ac559aeae33f77b8490b1f
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 30 16:30:27 2022 +0800
+
+    modification of reportable by add View.js parent class and sub classes
+    adding logic for table display when user choose 1 year or 2 years
+    enlarge text size
+
+commit 6e5bdaba2b4489a1bd44a383e3c24f668f825c2f
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 30 01:25:35 2022 +0800
+
+    minor changes, the table dosen't work when user choose 1 year, will update soon
+
+commit 6bea61f473ce06e6f165859a61759c28f50fc7a7
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 30 00:48:12 2022 +0800
+
+    test it with real user object generated by click submit button
+
+commit 60897fba88c1ab108c42ac7f08da076501ebc381
+Merge: c350a676 aeffb28a
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 30 00:21:08 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit c350a676a4123db17c59a39ae4e6df357df28348
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 30 00:18:26 2022 +0800
+
+    add testing report using a user example data
+    split the report into 4 areas: general info, balance sheet,income statement and ratios
+
+commit aeffb28acc7e143c7dd5c568d8dc75afff2f5148
+Author: “Lyrel” <jelena.aksenova@gmail.com>
+Date:   Fri Jul 29 16:43:10 2022 +0200
+
+    PDF report linked
+    
+    *jsPDF library added
+    *custom font Raleway is added
+    *PDF report is linked to submit button
+    *no data transfer is implemented yet
+
+commit 7932d73fa2060731c3e5022525652b153941df51
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 29 09:52:29 2022 +0200
+
+    Additional changes - WIP
+
+commit 490dedcb1489c0007771ad0f9b5bf616ef1622ae
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 29 09:47:29 2022 +0200
+
+    changes to user input and description
+    
+    Added: Short Term loan (current Liability)
+    Removed: Trade payable
+    Removed Asterisks from many of the elements
+    Removed: Interest Payable
+
+commit 88d2b0ac4dc1f30cb351814f986d0c93a409b9e8
+Author: Wesley Fang <107345441@qq.com>
+Date:   Fri Jul 29 01:18:15 2022 +0800
+
+     modify some hard coded parts which are error-prone and hard to finish the following task of creating report table etc,
+     also the modification of user object so that it is better organized.
+
+commit f7c5e359ee503a65ed9a157652fd3162b23344ff
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 26 23:32:38 2022 +0800
+
+    add 2 important functions
+    1st: can turn an array of html nodes into a big object of nodes with
+    one of the node's class attribute as key
+    2st: turn an object of object with nodes into object of values (numerics or text).
+
+commit 61cb119ddaeb2ad85b02dd5073bb388a9a9e9d3d
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Tue Jul 26 07:55:33 2022 +0200
+
+    Update Retained Earnings / Profit loss - should now work again
+
+commit 756a2bc53cc0b5faf155ccec1d171c2bce887b1d
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 26 08:31:34 2022 +0800
+
+    minor changes for testing data
+
+commit cbe6d5095d19c880a2063944f04702b5d7051838
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 26 08:09:43 2022 +0800
+
+    minor changes on testing data
+
+commit bbd5d03bc73dd68ede39c6b0692f72205e354ad0
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 26 08:06:52 2022 +0800
+
+    testing for the table, populate test data
+
+commit c57fc2bc081c0740b0372ab4c3b2855baa1808db
+Merge: ec949bc6 c4fba9c5
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Mon Jul 25 17:25:48 2022 -0400
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit into main
+    
+    Reconciling for adding DB
+
+commit ec949bc623b18406c6f835d49b5e17b4dfc81720
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Mon Jul 25 17:23:37 2022 -0400
+
+    Created database, added connection code and test query. Also fixed routing issues.
+
+commit c4fba9c5f4f811c598d6972cac5bcade28dcb8aa
+Merge: 13215f77 be7f66ef
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 26 01:10:28 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 13215f7778da172f222528df24f1a9b1bd16daae
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 26 01:00:46 2022 +0800
+
+    populate data into forecast columns according to user input growth rate;
+    if user change years of report:
+      if from 1=>2 years, clear all forecast columns;
+      if from 2=>1 year, automatically change the base year and the
+      forecast columns data;
+      delete the button for confirmation of years of report as it is redundant.
+
+commit be7f66efe5f5bc3daeba8e1460feb246cf4e7eef
+Author: CHRCODER <84539897+sodoc1@users.noreply.github.com>
+Date:   Mon Jul 25 10:58:00 2022 -0600
+
+    Minor change for Img/ pathway
+    
+    - Social hover not aligned for team -5 image, image edited to fit
+    -path fixed for Analysis page
+
+commit d536c95079133e2374f7091ee48bbfb64723ffa7
+Merge: 2a537bc3 d6d32b38
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 25 10:13:00 2022 +0200
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 2a537bc38ff8e42984fd50892d0d1e61d45df403
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 25 10:12:42 2022 +0200
+
+    Retained earnings changed to Accumulated Profit/loss
+    
+    RE = Accumulated profit + Profit Loss
+
+commit d6d32b3815cefce45a08662cef927fbabad2de19
+Merge: 8fbdf577 6b10607b
+Author: CHRCODER <84539897+sodoc1@users.noreply.github.com>
+Date:   Mon Jul 25 02:05:05 2022 -0600
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 8fbdf5771c6fb1967a6980a68fff2e21c8c8aa0c
+Author: CHRCODER <84539897+sodoc1@users.noreply.github.com>
+Date:   Mon Jul 25 02:04:53 2022 -0600
+
+    Update to fix loading page
+    
+    -Specific pathway needed for MIME Type error; favicon up and running.
+
+commit 6b10607b6c4257c352caec7da095ce5691d9c73e
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 25 09:58:43 2022 +0200
+
+    added back Profit
+
+commit 579f85141f32d3b59bb99176888582146539eaab
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 25 09:19:00 2022 +0200
+
+    Login tweaks
+    
+    Minor tweaks to the user and login fields. I am to return an error notification (site in construction)
+
+commit 6213cecff8644e9a625350fa50cbe1b750f18099
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Jul 24 16:00:08 2022 +0800
+
+    minor change
+
+commit 33489b449f138f66c329364aa0d82a6752d483cd
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Jul 24 15:58:02 2022 +0800
+
+    minor changes...
+
+commit 7474dd1c0a5c3996c9e11111783dcc116dc99171
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sun Jul 24 15:48:59 2022 +0800
+
+    add user input valid check when submit. if detect 0 or blank, remind user
+    user can choose to recheck and submit later or submit anyway.
+    then all blank value will be foreced into 0;
+    add extra columns for 2 forecasting years of income statement;This is done
+    by inserting html nodes and dynamically assign attributes to them.
+    add logic for the year title change accordingly;
+
+commit 1c3d92b5b9b43de38f630182702ceee10cc0ec73
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 14:30:45 2022 +0200
+
+    Add Return Function - click on logo or Home page button
+
+commit a76a359a582eeae1ac995d78c279c6df61c5c278
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 14:23:40 2022 +0200
+
+    Revert "Add Return to home page - based on Logo and added a button"
+    
+    This reverts commit 4fccf9e3fc13083a523691da1fd5173ac7ff2973.
+
+commit 862ee8c530489da36977285f2161afa93f41f75e
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 14:23:35 2022 +0200
+
+    Revert "Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit"
+    
+    This reverts commit af6596c5ed74a0858468cd09396c43cc89cbb9aa, reversing
+    changes made to 4fccf9e3fc13083a523691da1fd5173ac7ff2973.
+
+commit 7ecb9e23a204ece5256d7c13d029391793a13971
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 14:23:31 2022 +0200
+
+    Revert "Trying to get Return function to work ..."
+    
+    This reverts commit f61e3e5c142356fc164a4d7dbed2b867929891ef.
+
+commit 4d1c35108b919be901402386ff5087902848b4fb
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 14:23:23 2022 +0200
+
+    Revert "Wesley - look at this function that I have commented out ... it throws an error.."
+    
+    This reverts commit c91956d26e17053d11a6a0f8fbee3080aa26968e.
+
+commit c91956d26e17053d11a6a0f8fbee3080aa26968e
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 14:07:11 2022 +0200
+
+    Wesley - look at this function that I have commented out ... it throws an error..
+
+commit f61e3e5c142356fc164a4d7dbed2b867929891ef
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 14:05:09 2022 +0200
+
+    Trying to get Return function to work ...
+
+commit af6596c5ed74a0858468cd09396c43cc89cbb9aa
+Merge: 4fccf9e3 646e5e90
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 13:58:16 2022 +0200
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 4fccf9e3fc13083a523691da1fd5173ac7ff2973
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Sat Jul 23 13:57:12 2022 +0200
+
+    Add Return to home page - based on Logo and added a button
+
+commit 646e5e90c1fe2dbba263c5ae621c631c3b9cf4f6
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 23 19:28:12 2022 +0800
+
+    add some comments; clear some outdated ideas and functions not used.
+
+commit 436110367850c7baeb619bbdeeba033b2a2086a9
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 23 11:38:20 2022 +0800
+
+    delegate data files to dataModel to keep controller.js clean and easy to understand
+
+commit d1197c734387a54e3057eaa99de6a9b2296ed7df
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 23 10:41:11 2022 +0800
+
+    adding close image to the upload image function
+
+commit d4079d2dc0edb994990288bc527cb9967da8b4a6
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 16:14:35 2022 +0200
+
+    Upload image - change text by element id
+
+commit 84ae386cbbe013259bfadb8f563f39c8bdc129ed
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 15:42:58 2022 +0200
+
+    Changed disabled to readonly on input tags
+
+commit c093b7928f0aa3ffce981369facacec7bfacf43f
+Author: Wesley Fang <107345441@qq.com>
+Date:   Fri Jul 22 21:09:59 2022 +0800
+
+    add whole list of dropdown list;
+    add * as a reminder for compusory input;
+    add ratios for 1 year user object;
+    change the valid check for Inventory ratio;
+
+commit 268f79f654f1786fd8666beafb6e4d66235e912f
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 12:38:22 2022 +0200
+
+    Small tweaks to Year 2 ratios. Should be 100% working and accurate
+
+commit 7841406940c81ff19b4f422bbaa0fd7af8be265f
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 12:30:50 2022 +0200
+
+    Ratios - Year 2 - complete (without checking output)
+
+commit 6110f343f7ecb65e6ff5d7ecbccf467bea1da5a8
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 11:46:18 2022 +0200
+
+    CSS changes - Increased the size of the FS input table
+
+commit acef57657aebc369a50a9983dd277c2aef8c9cca
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 09:59:45 2022 +0200
+
+    Adding Ratios - WIP (all year 1 ratios) ... need to be checked
+
+commit 6680fbd01bed6ee1849fd09d806b63af8d933b37
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 09:59:25 2022 +0200
+
+    Adding Depreciation - errors
+
+commit 699ee881ea3c52de407a050558345d9d106c4827
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 08:28:52 2022 +0200
+
+    Edits to adding Depreciation
+
+commit eb1d5a6a75a3689d294dea039a63e71ddbe6910d
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 08:28:26 2022 +0200
+
+    Added Depreciation Expense
+    
+    This was needed to calculate one of the Ratio
+
+commit f6d9575891f97211d54dcf1efc8ede6a0e9c3093
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 07:50:55 2022 +0200
+
+    Ratios - continued ... WIP
+
+commit cc7da3ab49bb06277053cabacb827be73d54020d
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 07:50:31 2022 +0200
+
+    Remove increase/decrease from input tag
+
+commit 8c4f731baff7bb66f3fc20e0c96d9c84427d693f
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Fri Jul 22 07:49:49 2022 +0200
+
+    Changed disabled to readonly ... will read into this later
+
+commit a93eb57342ec06efa8f54c766818967f357bfd7d
+Author: Wesley Fang <107345441@qq.com>
+Date:   Thu Jul 21 23:45:26 2022 +0800
+
+    test ratios calc for 2-years class
+
+commit 20dae50553717d7e64fa7743fa59f44b8511649c
+Author: Wesley Fang <107345441@qq.com>
+Date:   Thu Jul 21 22:18:05 2022 +0800
+
+    minor changes to split Eventlistener to Year1 input column and Year2 input column
+
+commit 6012fa6e30ed53f76870a9f41dbc74318c0d6da8
+Author: Wesley Fang <107345441@qq.com>
+Date:   Thu Jul 21 21:59:04 2022 +0800
+
+    rethinking and redoing of the input value change chaining
+
+commit cbfcb174c10d1d5c3bbb13fc970f862b7ad92f47
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Thu Jul 21 10:34:48 2022 +0200
+
+    Minor checks changes
+
+commit c2c60d120b80e83dce02e6aec6e05b598bfd5922
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Jul 20 22:55:09 2022 +0800
+
+    transfer findata into a big object with nested objects so that we can calculate ratios easily.
+
+commit edf050a276eaa7597e05a8a5464eb23908dd8713
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Jul 20 22:09:46 2022 +0800
+
+    user input valid check : only positive numbers and default decimal .01;
+
+commit bca015ba9310b12b7084afacc23fd3b03d9bac0b
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Wed Jul 20 09:52:02 2022 +0200
+
+    More changes ... still adjusting Income Statement Elements
+
+commit c6d943a71bb04a8a63eeac1886efb07b189fa581
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Wed Jul 20 09:37:24 2022 +0200
+
+    Updating Financial Input - Income Statement self calculate
+
+commit 56df70d78917aa89265ef619fba7a39dac6b179c
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Wed Jul 20 08:25:04 2022 +0200
+
+    Removed Input from Income statement - as it is a heading. Added Year 1 and Year 2
+
+commit 386aa615ac00b349d7da611f81f3f0843dcac8e9
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Wed Jul 20 08:00:35 2022 +0200
+
+    Helper.js - fixed error in calcs  // Analysis.html updaded disabled tags
+
+commit 4f2b0eae1aecee78ee2f7b145a3814b3316098c9
+Author: Wesley Fang <107345441@qq.com>
+Date:   Wed Jul 20 01:54:27 2022 +0800
+
+    add automatic sum findata;
+    add clear button function;
+    add * before compusory input;
+    add maxlength for company intro textarea;
+
+commit 67a7c287670613ab384fc043561554a8a63999a9
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Tue Jul 19 14:07:12 2022 +0200
+
+    updating terms of elements analysis.html
+
+commit 0b5c14e3e26c33eb38e54f1f22dc8e00ef9b3220
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Tue Jul 19 11:32:28 2022 +0200
+
+    Upload image helper.js / and button
+    
+    Upload image on helper.js and updating analysis.html definitions
+
+commit 100e81c5d61b5019410eb66b45f3371c7a0d1269
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Tue Jul 19 11:21:47 2022 +0200
+
+    Add title attribute to each element ...
+    
+    Add a description to each element on the financial statements
+
+commit b847c273519455074d9f102616e66f318f074b46
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Tue Jul 19 10:53:23 2022 +0200
+
+    Disabled all inputs that are not user inputs
+
+commit 7431d630490be25ca17fbbc0b5598fbddb44667a
+Merge: 0fdd56e9 26e8b0cf
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 19 07:54:06 2022 +0800
+
+    Merge branches 'main' and 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit 26e8b0cf4e01403c471cffb565ef54479d2d46c8
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 18 20:07:02 2022 +0200
+
+    Revert "changes to naming and helper.js"
+    
+    This reverts commit 026cdfbeec066dbb5aec541ce7da3ef5efbc1dea.
+
+commit fb0055595b19798e4b16882b80f2248bb16854c7
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 18 20:06:58 2022 +0200
+
+    Revert "Disabled inputs that are calculated by us"
+    
+    This reverts commit 54b6e5f1c5f8feb7c9c6989b6fc48db112a275af.
+
+commit 0fdd56e9a801dc8a6ebf85afeda8a862b50f9997
+Author: Wesley Fang <107345441@qq.com>
+Date:   Tue Jul 19 00:07:51 2022 +0800
+
+    add report years option.
+    finish user object building
+    use ES6 class inheritance to solve the 1 year or 2 year findata problem.
+
+commit 54b6e5f1c5f8feb7c9c6989b6fc48db112a275af
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 18 13:30:09 2022 +0200
+
+    Disabled inputs that are calculated by us
+
+commit 026cdfbeec066dbb5aec541ce7da3ef5efbc1dea
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 18 13:19:15 2022 +0200
+
+    changes to naming and helper.js
+    
+    Upload logo for analysis
+
+commit de2f0098134aa8c119bd9fb22ea080e9582268fd
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 18 12:14:19 2022 +0200
+
+    Revert "Disabled all input on analysis.html that are not user inputs"
+    
+    This reverts commit 47704019883e9fcbe3ca1c8777a95c9de5541866.
+
+commit 47704019883e9fcbe3ca1c8777a95c9de5541866
+Author: bevwingfield <bev.wingfield@gmail.com>
+Date:   Mon Jul 18 09:35:31 2022 +0200
+
+    Disabled all input on analysis.html that are not user inputs
+    
+    Disabled all non user inputs ... these will need to be calculated using the other user inputs
+
+commit ea703ff44c0d15ac2da9966de013dbe1f0387c03
+Author: Wesley Fang <107345441@qq.com>
+Date:   Mon Jul 18 07:36:27 2022 +0800
+
+    refactor the structure to make it more seperate of concern
+
+commit cf2f4af7fbae0f2a34e8cb54fc32c08d3d4edaba
+Author: Wesley Fang <107345441@qq.com>
+Date:   Mon Jul 18 03:20:15 2022 +0800
+
+    create user object, including financial  key-value pair
+
+commit 1f3b275cba2262937509eb25a994f0cd0fa6eb3f
+Author: Wesley Fang <107345441@qq.com>
+Date:   Mon Jul 18 00:56:33 2022 +0800
+
+    add html query selectors
+    add company intro word counts limitation
+    add user input valid check
+    add user class and generate new user object
+
+commit a097265f4aa2298e390e391b29bbbd868695bdbe
+Author: Red Skull <bradfordmichael7@gmail.com>
+Date:   Sat Jul 16 10:52:11 2022 -0400
+
+    Added server, configured site to run off of server, consolidated folders, added ratios page to analysis link on home page
+
+commit bfe9dcf27cf8047cf9a34d76c700080184f31c70
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 16 19:52:46 2022 +0800
+
+    application skeleton with refactored html elements
+
+commit 1396b49543543bfcdd30d5dba03628007b629d80
+Merge: a6ba5e83 72697bc7
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 2 19:54:57 2022 +0800
+
+    Merge branch 'main' of https://github.com/bevwingfield/AgileSoftware2022_Credit
+
+commit a6ba5e830a5f82362c51bb724899d23ee36ed6a4
+Author: Wesley Fang <107345441@qq.com>
+Date:   Sat Jul 2 19:50:21 2022 +0800
+
+    accept the new logo
+
+commit 72697bc743347005eb4db44a55b7281fbb4e72d3
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Fri Jun 17 15:44:35 2022 +0200
+
+    Favicon and logo updates
+    
+    Changed Favicon and Logo
+
+commit 2b16b42979017fd89a78ad5d090aa42287fb7175
+Author: Scott Lee <84539897+sodoc1@users.noreply.github.com>
+Date:   Sat Jun 11 02:00:23 2022 -0600
+
+    favicon uploaded
+    
+    Reportado favicon
+
+commit 552b9c29988a39f022932c44cfb60c5ab88bc38c
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Thu Jun 9 08:34:10 2022 +0200
+
+    Logo Asset added
+
+commit 5e0f94c1db2d2fe94bcb44105f8f020f01e527fb
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Tue Jun 7 12:00:39 2022 +0200
+
+    Update style.css
+
+commit 619b0b7d14e5184592c0de1446471e526add4dc5
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Tue Jun 7 11:56:14 2022 +0200
+
+    Adding LOGO Asset
+    
+    Needed to ADD the logo.png to the folder so that it would show when page loaded
+
+commit 140b006b6421e657899e16f186d10aa99830359f
+Author: Wesley Fang <107345441@qq.com>
+Date:   Mon Jun 6 22:43:36 2022 +0800
+
+    adding logo
+
+commit efa1b9d133bc42ed343cca9d1b6b2c126ef436fa
+Author: Wesley Fang <107345441@qq.com>
+Date:   Mon Jun 6 22:36:41 2022 +0800
+
+    service-price css change to flex:space-between
+
+commit 5cac27ad4c43016c81e8f043c4ff42bdcc688a99
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Mon Jun 6 15:04:22 2022 +0200
+
+    Changes
+
+commit f4e45c8b9dcac27514a7806a75c0382d19a076d2
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Mon Jun 6 13:21:18 2022 +0200
+
+    Update
+    
+    Getting basic bootstrapped site to a basic skeleton of our website
+
+commit 0c46266f07e4ac7bd7a9e356b5baa5321671fad2
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Mon Jun 6 13:08:19 2022 +0200
+
+    Main comit
+
+commit 0065bea6dd6a0f0d13d3ee0f27d0c7feb2a106fe
+Author: Beverley Wingfield <bev.wingfield@gmail.com>
+Date:   Sun May 8 16:46:00 2022 +0200
+
+    Start_up
+    
+    Testing
+    Repository
+    Index.html
+    ratio.js
+
+commit e6121c741796bf2f314c7ec0b684f6482241d254
+Author: bevwingfield <37134576+bevwingfield@users.noreply.github.com>
+Date:   Sun May 8 16:37:25 2022 +0200
+
+    Initial commit

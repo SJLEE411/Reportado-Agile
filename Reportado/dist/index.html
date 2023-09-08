@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/index.e37f48ea.js" defer=""></script>
+    <link rel="stylesheet" href="/index.c92073ef.css" />
+    <title>Reportado</title>
+  </head>
+  <body>
+    <!-- TOP NAVIGATION -->
+    <nav>
+      <img src="/logo.726d37a8.png" alt="Logo" class="logo float-start" />
+      <p class="welcome">Log in to get started</p>
+      <form class="login">
+        <input
+          type="text"
+          placeholder="user"
+          class="login__input login__input--user"
+        />
+        <!-- In practice, use type="password" -->
+        <input
+          type="text"
+          placeholder="PIN"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+
+    <div class="container">
+      <div class="d-flex flex-column">
+        <!-- user input(left) and examples pictures(right) -->
+        <div class="row">
+          <div class="row col-6 g-2 mb-3">
+            <!-- input Company name, industry and currency  -->
+            <div class="operation input--company mb-2">
+              <h2>Company Information</h2>
+              <!-- company info -->
+              <div class="input-group-lg gx-2 mb-2 d-flex">
+                <span class="input-group-text" id="before"
+                  ><h4>Company name</h4></span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Input your company name"
+                  aria-label="Hashtag"
+                  aria-describedby="before"
+                />
+              </div>
+              <!-- select industry -->
+              <select
+                class="form-select form-select-lg mb-2"
+                aria-label="Large select"
+                id="inputSelectLarge"
+              >
+                <option selected=""><h4>Choose Industry</h4></option>
+                <option value="">01 - Agricultural Production Crops</option>
+                <option value="">
+                  02 - Agriculture production livestock and animal specialties
+                </option>
+                <option value="">08 - Forestry</option>
+              </select>
+              <!-- input company intro -->
+              <div class="mb-2">
+                <label for="textarea" class="form-label"
+                  ><h4>Company Introduction</h4></label
+                >
+                <textarea
+                  class="form-control"
+                  id="textarea"
+                  rows="5"
+                  placeholder="Write your message here."
+                ></textarea>
+              </div>
+              <!-- upload company logo -->
+              <div class="input-group mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Logo upload(.png)"
+                  aria-label="Text input with button"
+                  aria-describedby="buttonAfter"
+                  disabled=""
+                />
+                <button
+                  type="button"
+                  class="btn-lg btn-primary w-50"
+                  id="buttonAfter"
+                >
+                  Upload company logo
+                </button>
+              </div>
+            </div>
+
+            <!--input of Balance sheet -->
+            <div class="operation input--balance-sheet">
+              <h2>Financial Data Input</h2>
+              <div class="d-flex justify-content-evenly g-3">
+                <select
+                  class="form-select"
+                  aria-label="Default select"
+                  id="inputSelect"
+                >
+                  <option selected=""><b>Currency</b></option>
+                  <option value="1">USD</option>
+                  <option value="2">EURO</option>
+                  <option value="3">Option three</option>
+                </select>
+                <select
+                  class="form-select"
+                  aria-label="Default select"
+                  id="inputSelect"
+                >
+                  <option selected=""><b>Units</b></option>
+                  <option value="1">1</option>
+                  <option value="2">thousands</option>
+                  <option value="3">million</option>
+                </select>
+                <select
+                  class="form-select"
+                  aria-label="Default select"
+                  id="inputSelect"
+                >
+                  <option selected=""><b>years of report</b></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="row m-2 align-content-center">
+                <div class="col-4 me-auto px-0"><h3>Balance Sheet</h3></div>
+                <div class="col-3 me-auto align-self-center">year1</div>
+                <div class="col-3 align-self-center">year2</div>
+              </div>
+
+              <!-- total assets -->
+
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <div class="col-4 me-auto px-2"><h4>Total Assets</h4></div>
+
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto"><h5>Current assets</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Cash/Petty Cash</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Inventory</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">
+                  Trade Recievables / Debtors
+                </div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Other current Assets</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+
+              <!--  -->
+              <!-- non current assets -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-2"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto"><h5>Non Current Assets</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Property Plant Equipment</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Intangible Assets</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">
+                  Loan Recievable (long term)
+                </div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Other Non current Assets</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <!-- bottom of total assets -->
+
+              <!-- total liabilities -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <div class="col-4 me-auto px-2"><h4>Total Liabilities</h4></div>
+
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto"><h5>Current Liabilities</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Trade Payables</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Accounts Payable</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Interest Payable</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Other Current Liabilities</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <!-- bottom of current liabilities -->
+
+              <!--non current liabilitys -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-2"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto">
+                  <h5>Non Current Liabilities</h5>
+                </div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Long Term Loan</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Shareholder Loan</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">
+                  Other Non Current Liabilties
+                </div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <!-- bottom of total liabilities -->
+              <!-- equities -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-2"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto"><h5>Equity</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Common Shares</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Retained Earnings</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Accumulated Profit/Loss</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <!-- bottom of  equtities-->
+
+              <!-- Total Liabilities and Stockholder Equity -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <div class="col-4 me-auto px-2">
+                  <h4>Total Liabilities and Stockholder Equity</h4>
+                </div>
+
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <!-- bottom of Total Liabilities and Stockholder Equity -->
+              </div>
+              <!-- bottom of financial data input -->
+              <!-- example pics placeholder -->
+              <div class="row col-6 rounded-3"></div>
+            </div>
+            <!-- bottom of balance sheet -->
+            <!-- input of  Income Statement-->
+            <div class="operation input--income-statement">
+              <div class="row m-2 align-content-center">
+                <div class="col-4 me-auto px-0"><h3>Income Statement</h3></div>
+                <div class="col-3 me-auto align-self-center">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-center">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+
+              <!-- Net sales -->
+
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <div class="col-4 me-auto">
+                  <h5>Net Sales (Sales less returns/discount)</h5>
+                </div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Cost of Sales</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4"><h5>Gross Profit</h5></div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <!-- operating expenses -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-2"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto"><h5>Operating Expenses</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Rent</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Salaries/Wages</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Entertainment</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Insurance</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Advertising</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Bad Debt Expense</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">OTHER OPERATING EXPENSES</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <!-- bottom of operating expenses -->
+
+              <!-- incomes -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <div class="col-4 me-auto px-2"><h4>Operating Income</h4></div>
+
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <div class="col-4 me-auto px-2">
+                  <h4>Other Income (outside normal operating income)</h4>
+                </div>
+
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <!-- 隔离线 -->
+                <div class="w-100 m-3"></div>
+                <!-- finance cost -->
+                <div class="col-4 me-auto"><h5>Finance cost</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Interest Income</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <div class="row m-2">
+                <div class="col-4 me-auto px-4">Interest Expense</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+              <!-- bottom of financial cost -->
+
+              <!--Income before tax -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-2"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto"><h5>Income before Tax</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-4 me-auto px-4">Income tax</div>
+                <div class="col-3 me-auto">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3">
+                  <input type="number" class="form-control" />
+                </div>
+              </div>
+
+              <!-- Net income -->
+              <div class="row m-2">
+                <!-- 隔离线 -->
+                <div class="w-100 m-2"></div>
+                <!-- current assets -->
+                <div class="col-4 me-auto"><h5>Net Income</h5></div>
+                <div class="col-3 me-auto align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="col-3 align-self-baseline">
+                  <input type="number" class="form-control" />
+                </div>
+                <!-- bottom of income statement -->
+              </div>
+              <!-- bottom of income statementinput -->
+              <div class="row">
+                <!-- 隔离线 -->
+                <div class="w-100 mt-5"></div>
+                <button type="button" class="btn btn-danger ms-auto me-3 col-2">
+                  Clear all</button
+                ><button type="button" class="btn btn-primary me-auto col-2">
+                  Submit
+                </button>
+              </div>
+            </div>
+            <!-- bottom of balance sheet -->
+          </div>
+
+          <!-- example pics placeholder -->
+          <div class="row col-6 rounded-3"></div>
+          <!--data display area after user input -->
+          <div class="movements">
+            <div class="movements__row">
+              <div class="movements__type movements__type--deposit">
+                2 total revenue
+              </div>
+              <div class="movements__date">3 days ago</div>
+              <div class="movements__value">4 000€</div>
+            </div>
+            <div class="movements__row">
+              <div class="movements__type movements__type--withdrawal">
+                total costs
+              </div>
+              <div class="movements__date">24/01/2037</div>
+              <div class="movements__value">-378€</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

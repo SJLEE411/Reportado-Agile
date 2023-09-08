@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="vendor/aos/aos.css" type="text/css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" type="text/css" rel="stylesheet">
+    <link href="vendor/boxicons/css/boxicons.min.css" type="text/css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" type="text/css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="./css/analysisStyle.css" />
+
+    <title>Reportado - Analysis</title>
+  </head>
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center">
+  <div class="container d-flex justify-content-center justify-content-md-between">
+    <div class="contact-info d-flex align-items-center">
+      <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:jelena@reportado.com">contact@reportado.com</a></i>
+      <i class="bi bi-phone d-flex align-items-center ms-4"><span>0800 0000 0000
+      </span></i>
+    </div>
+    <div class="social-links d-none d-md-flex align-items-center">
+      <a href="https://twitter.com/home" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <h1 class="logo"><a href="/"><img class="img-fluid" src="img/ReportadoLogo2.png" alt="logo"></a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt=""></a>-->
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="/">Home</a></li>
+        <li><a class="nav-link scrollto" href="/#about">About</a></li>
+        <li><a class="nav-link scrollto" href="/analysis">Analysis</a></li>
+        <li><a class="nav-link scrollto" href="/#team">Team</a></li>
+        <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+        <li><a class="nav-link scrollto" href="forms/UserGuide_Final_createPDF.pdf">User Guide</a></li>
+        <li><form class="login">
+          <input
+            type="text"
+            placeholder="username"
+            class="login__input login__input--user"
+          />
+          <!-- In practice, use type="password" -->
+          <input
+            type="text"
+            placeholder="Password"
+            maxlength="5"
+            class="login__input login__input--pin"
+          />
+          <button class="login__btn">&rarr;</button>
+        </form>
+        </li>
+      </ul>
+      </nav>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    <!-- .navbar -->
+  </div>
+</header><!-- End Header -->
+
+  <body>
+    <!-- TOP NAVIGATION -->
+    <div class="container">
+      <div class="d-flex flex-column">
+        <!-- user input(left) and examples pictures(right) -->
+        <div class="row">
+          <div class="row col-fluid g-2 mb-3 Input-Report-Area">
+            <!-- input Company name, industry and currency  -->
+            <div class="operation mb-2 Input-Company-Info-Area">
+              <h2>
+                <a
+                  title="Hover over financial statement elements to find out more. Elements with an *asterisk are required."
+                  ><span class="not-must" style="cursor: help"
+                    >Company Information <sub>[hover here]</sub></span
+                  ></a
+                >
+              </h2><a type="button"
+               class="btn btn-primary m-auto"
+                 href="forms/FinancialStatements_input_V12.xlsx" download
+                  >Download Excel Template</a
+                >
+              </button>
+              <input id="file-input" type="file" name="file-input" />
+              <button class="btn btn-primary m-auto btn-Upload-Excel" onclick="upload()">Upload Completed Template</button>
+              <!-- company info -->
+              <div class="input-group-lg gx-2 mb-2 d-flex">
+                <span class="input-group-text must" id="before"
+                  ><h4>Company Name</h4></span
+                >
+                <input
+                  type="text"
+                  class="form-control Input-Company-Info Company-Name"
+                  placeholder="Input your company name"
+                  aria-label="Hashtag"
+                  aria-describedby="before"
+                  id = "companyName"
+                  maxlength="50"
+                />
+              </div>
+              <!-- select industry -->
+              <div class="input-group-lg gx-2 mb-2 d-flex">
+                <span class="input-group-text must" id="before"
+                  ><h4>Company Industry</h4></span
+                >
+                <select
+                  class="form-select form-select-lg Input-Company-Info Industry-Name"
+                  aria-label="Large select"
+                  id="inputSelectLarge"
+                >
+                  <option value="" selected><h4>Choose Industry</h4></option>
+                </select>
+              </div>
+              <!-- input company intro -->
+              <div class="mb-2">
+                <label for="textarea" class="form-label"
+                  ><h4>Company Introduction</h4></label
+                >
+                <textarea
+                  class="form-control Input-Company-Info Company-Intro"
+                  id="textarea"
+                  rows="5"
+                  placeholder="Write your message here within 1000 letters"
+                  name="awsome company"
+                  value="default description"
+                  maxlength="500"
+                ></textarea>
+              </div>
+              <!-- upload company logo -->
+
+              <!-- <div class="input-group mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Please upload your company logo in png format"
+                  aria-label="Text input with button"
+                  aria-describedby="buttonAfter"
+                  readonly
+                />
+
+                <button
+                  type="button"
+                  class="btn-lg btn-primary w-50 Upload-Company-Logo"
+                  id="buttonAfter"
+                >
+                  <p>
+                    <input
+                      type="file"
+                      accept="image/png"
+                      name="image"
+                      id="file"
+                      onchange="loadFile(event)"
+                      style="display: none"
+                    />
+                  </p>
+                  <p
+                    id="logo-change"
+                    class="d-flex justify-content-center gap-2"
+                  >
+                    <span class="badge bg-secondary"
+                      ><label id="lb" for="file" style="cursor: pointer"
+                        >Upload Image</label
+                      ></span
+                    >
+                  </p>
+                  <p>
+                    <img id="output" width="100" class="img-thumbnail d-none" />
+                  </p>
+                </button>
+              </div> -->
+            </div>
+            <div class="operation Input-Financial-Info-Area">
+              <h2>Financial Data Input</h2>
+              <div class="row-cols-3 d-flex justify-content-evenly g-3">
+                <div>
+                  <div class="input-group col-3">
+                    <select
+                      class="form-select Input-Financial-Info User-Currency"
+                      aria-label="Default select"
+                      id="inputSelect"
+                    >
+                      <option value="USD">USD</option>
+                      <option value="EURO">EURO</option>
+                      <option value="CNY">CNY</option>
+                      <option value="WON">WON</option>
+                    </select>
+                    <a title="Choose your Currency  default:USD"
+                      ><span
+                        style="cursor: help"
+                        class="input-group-text"
+                        id="after"
+                        >Currency
+                      </span></a
+                    >
+                  </div>
+                </div>
+                <div>
+                  <div class="input-group col-3">
+                    <select
+                      class="form-select Input-Financial-Info User-Unit"
+                      aria-label="Default select"
+                      id="inputSelect"
+                    >
+                      <option value="1">1</option>
+                      <option value="1000">thousand</option>
+                      <option value="1000000">million</option>
+                    </select>
+                    <a title="Choose your data units  default:1"
+                      ><span
+                        style="cursor: help"
+                        class="input-group-text"
+                        id="after"
+                        >Units
+                      </span></a
+                    >
+                  </div>
+                </div>
+
+                <div>
+                  <div class="input-group col-3">
+                    <select
+                      class="form-select Input-Financial-Info Start-of-fiscal-Year"
+                      aria-label="Default select"
+                      id="inputSelect"
+                    >
+                     
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <!-- <option value="3">3</option> -->
+                    </select>
+                    <a
+                      title="Choose start year to input financial data.  default:2020"
+                      ><span
+                        style="cursor: help"
+                        class="input-group-text"
+                        id="after"
+                        >Start of fiscal year
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-cols-3 d-flex justify-content-evenly g-3">
+                <div class="">
+                  <div class="input-group col-3">
+                    <select
+                      class="form-select Input-Financial-Info User-Years-of-Report"
+                      aria-label="Default select"
+                      id="inputSelect"
+                      data-bs-target="#reportYearsAlertMsg"
+                    >
+                      <!-- <option value="" selected="">
+                        <b>*years of report</b>
+                      </option> -->
+                      <option class="option-1-year" value="1">1</option>
+                      <option class="option-2-years" value="2">2</option>
+
+                      <!-- <option value="3">3</option> -->
+                    </select>
+                    <a title="How many years of data to input: integer 1 or 2"
+                      ><span
+                        style="cursor: help"
+                        class="input-group-text"
+                        id="after"
+                        >years of report
+                      </span></a
+                    >
+                  </div>
+                  <div
+                    class="modal fade modal-Years-Of-Report-Alert-Msg"
+                    id="reportYearsAlertMsg"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="reportYearsAlertMsgLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title bg-danger"
+                            id="reportYearsAlertMsgLabel"
+                          >
+                            Which Year do you want to keep?
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close alert-msg-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          Please choose which report year to
+                          <strong>keep</strong>!
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-Keep-FY2"
+                            data-bs-dismiss="modal"
+                          >
+                            FY2
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-secondary btn-Keep-FY1"
+                            data-bs-dismiss="modal"
+                          >
+                            FY1
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="input-group col-3">
+                    <input
+                      type="number"
+                      class="form-control Input-Financial-Info Forecast-Growth-Rate-Year1"
+                      placeholder=""
+                      aria-label="year 2 forecast growth rate"
+                    />
+                    <a title="Forcast rate input as a decimal: eg 10% = 0.1"
+                      ><span
+                        style="cursor: help"
+                        class="input-group-text"
+                        id="after"
+                        >year1 forecast growth rate
+                      </span></a
+                    >
+                  </div>
+                </div>
+                <div class="">
+                  <div class="input-group col-3">
+                    <input
+                      type="number"
+                      class="form-control Input-Financial-Info Forecast-Growth-Rate-Year2"
+                      placeholder=""
+                      aria-label="year2 forecast growth rate"
+                    />
+                    <a title="Forcast rate input as a decimal: eg 10% = 0.1"
+                      ><span
+                        style="cursor: help"
+                        class="input-group-text"
+                        id="after"
+                        >year2 forecast growth rate
+                      </span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of Financial-Info-Area -->
+
+            <form>
+              <!-- =============================================================== -->
+              <!--input of Balance sheet -->
+              <div class="operation Input-Balance-Sheet-Area">
+                <div class="row m-2 align-content-center">
+                  <div class="col-4 me-auto px-0 balance-sheet">
+                    <h3>Balance Sheet</h3>
+                  </div>
+                  <div class="col-3 me-auto align-self-center">
+                    <div class="Year1 Balance-Sheet-Year1">year1</div>
+                  </div>
+                  <div class="col-3 align-self-center">
+                    <div class="Year2 Balance-Sheet-Year2">year2</div>
+                  </div>
+                </div>
+
+                <!-- total assets -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <div class="col-4 me-auto px-2"><h4>Total Assets</h4></div>
+
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Total-Assets-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Total-Assets-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <!-- 隔离线 -->
+                <div class="row m-2">
+                  <div class="w-100 m-3"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto"><h5>Current Assets</h5></div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      type="number"
+                      class="form-control Year1 Current-Assets-Year1"
+                      readonly
+                      class="not-must"
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      type="number"
+                      class="form-control Year2 Current-Assets-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Cash: money in the form of coins/bills or in a bank account, held to acquire goods or reduce obligations/liabilities."
+                      ><span class="not-must" style="cursor: help"
+                        >Petty Cash/Cash</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      type="number"
+                      class="form-control Year1 Cash-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="number"
+                      class="form-control Year2 Cash-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Inventory (stock): materials that are held for sale."
+                      ><span style="cursor: help">Inventory</span></a
+                    >
+                  </div>
+
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Inventory-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Inventory-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Accounts Receivables: Money owed by customers who have bought a product/service but have not yet paid for this product/service."
+                      ><span style="cursor: help">Accounts Recievable</span></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Debtors-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Debtors-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Other Current Assets: All other current assets (turned into cash within a 12 month period)."
+                      ><span style="cursor: help">Other Current Assets</span></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Other-Current-Assets-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Other-Current-Assets-Year2"
+                    />
+                  </div>
+                </div>
+
+                <!--  -->
+                <!-- non current assets -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-2"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto"><h5>Non Current Assets</h5></div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Non-Current-Assets-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Non-Current-Assets-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="PPE (fixed assets): Long term assets that are essential for business operations. This includes Land, Building and Equipment."
+                      ><span class="not-must" style="cursor: help"
+                        >Property Plant Equipment</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Property-Plant-Equipment-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Property-Plant-Equipment-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Intangible Assets: Are non current assets that lack physical substance. This includes copyrights, patents and goodwill"
+                      ><span class="not-must" style="cursor: help"
+                        >Intangible Assets</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Intangible-Assets-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Intangible-Assets-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Loan Recievable (long term): A Loan that is owed to the business, usually over a period longer than 12 months."
+                      ><span style="cursor: help" class="not-must"
+                        >Loan Recievable (long term)</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Loan-Recievable-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Loan-Recievable-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Other Non Current Assets: All other assets that are not likely to be turned into cash within a 12 month period."
+                      ><span style="cursor: help"
+                        >Other Non Current Assets</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Other-Non-Current-Assets-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Other-Non-Current-Assets-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- bottom of total assets -->
+
+                <!-- total liabilities -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <div class="col-4 me-auto px-2">
+                    <h4>
+                      <a
+                        title="Total Liabilities: The sum of Current and Non Current Liabilities"
+                        ><span class="not-must" style="cursor: help"
+                          >Total Liabilities</span
+                        ></a
+                      >
+                    </h4>
+                  </div>
+
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Total-Liabilities-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Total-Liabilities-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto">
+                    <h5>
+                      <a
+                        title="Current Liabilities: Short term Liabilities are liabilities/obligations that are due in the immediate future (payable within 12 months)."
+                        ><span class="not-must" style="cursor: help"
+                          >Current Liabilities</span
+                        ></a
+                      >
+                    </h5>
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Current-Liabilities-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Current-Liabilities-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Short Term Loan: Short term portion of a loan still due to the lender."
+                      ><span class="not-must" style="cursor: help"
+                        >Short Term Loan</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      type="number"
+                      class="form-control Year1 Short-Term-Loan-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="number"
+                      class="form-control Year2 Short-Term-Loan-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Trade Payable: Is money owed by a business to its creditors/suppliers, usually within a 12 month period."
+                      ><span style="cursor: help">Trade Payables</span></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Trade-Payables-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Trade-Payables-Year2"
+                    />
+                  </div>
+                </div> -->
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Accounts Payable: short-term obligations owed to creditors or suppliers, which have not yet been paid."
+                      ><span style="cursor: help">Accounts Payable</span></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Accounts-Payable-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Accounts-Payable-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Interest Payable: Is the amount of interest on a company's debt that is still outstanding (owed to the lenders)."
+                      ><span class="not-must" style="cursor: help"
+                        >Interest Payable</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Interest-Payable-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Interest-Payable-Year2"
+                    />
+                  </div>
+                </div> -->
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Other Current Liabilities: All other liabilities/obligations due within a 12 month period."
+                      ><span style="cursor: help"
+                        >Other Current Liabilities</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Other-Current-Liabilities-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Other-Current-Liabilities-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- bottom of current liabilities -->
+
+                <!--non current liabilitys -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-2"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto">
+                    <h5>Non Current Liabilities</h5>
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Non-Current-Liabilities-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Non-Current-Liabilities-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Long Term Loan: Long term portion of a loan still due to the lender."
+                      ><span class="not-must" style="cursor: help"
+                        >Long Term Loan</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      type="number"
+                      class="form-control Year1 Long-Term-Loan-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="number"
+                      class="form-control Year2 Long-Term-Loan-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Shareholder Loan: A long term loan still due to a shareholder."
+                      ><span class="not-must" style="cursor: help"
+                        >Shareholder Loan</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Shareholder-Loan-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Shareholder-Loan-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Other Non Current Liabilities: All other long term liabilities - due in more than 12 months."
+                      ><span style="cursor: help"
+                        >Other Non Current Liabilities</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Other-Non-Current-Liabilties-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Other-Non-Current-Liabilties-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- bottom of total liabilities -->
+                <!-- equities -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-2"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto">
+                    <h5>
+                      <a
+                        title="Equity: The value of an owner's interest in a company after all liaibilities have been deducted"
+                        ><span class="not-must" style="cursor: help"
+                          >Equity</span
+                        ></a
+                      >
+                    </h5>
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Equity-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Equity-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Share capital: The financial contribution/investment made by the owners of a company."
+                      ><span class="not-must" style="cursor: help"
+                        >Common Shares / Share Capital</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Common-Shares-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Common-Shares-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Retained Earnings (prior period): A companys cumulative profits after dividends have been paid."
+                      ><span class="not-must" style="cursor: help"
+                        >Retained Earnings</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Retained-Earnings-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Retained-Earnings-Year2"
+                    />
+                  </div>
+                </div>
+
+                <!-- I HAVE REMOVED ACCUMULATED PROFIT / LOSS FOR THE TIME BEING  -->
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Profit/Loss: The sum of the company's current year revenues less all its expenses after tax has been paid."
+                      ><span class="not-must" style="cursor: help"
+                        >Profit/Loss</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Accumulated-Profit-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Accumulated-Profit-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- bottom of  equtities-->
+
+                <!-- Total Liabilities and Stockholder Equity -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <div class="col-4 me-auto px-2">
+                    <h4>Total Liabilities and Stockholder Equity</h4>
+                  </div>
+
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Total-Liabilities-and-Stockholder-Equity-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Total-Liabilities-and-Stockholder-Equity-Year2"
+                      readonly
+                    />
+                  </div>
+                  <!-- bottom of Total Liabilities and Stockholder Equity -->
+                </div>
+              </div>
+              <!-- end of .operation input-balance-sheet -->
+              <!-- input of  Income Statement-->
+              <div class="operation Input-Income-Statement-Area">
+                <div class="row m-2 align-content-center">
+                  <div class="col-4 me-auto px-0 Income-Statement">
+                    <h3>Income Statement</h3>
+                  </div>
+                  <div class="col-3 me-auto align-self-center">
+                    <div class="Year1 Income-Statement-Year1">year1</div>
+                  </div>
+                  <div class="col-3 align-self-center">
+                    <div class="Year2 Income-Statement-Year2">year2</div>
+                  </div>
+                  <div class="col-3 me-auto align-self-center">
+                    <div class="ForecastY1 Income-Statement-ForecastY1">
+                      year3
+                    </div>
+                  </div>
+                  <div class="col-3 align-self-center">
+                    <div class="ForecastY2 Income-Statement-ForecastY2">
+                      year4
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Net sales -->
+
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <div class="col-4 me-auto">
+                    <h5>
+                      <a
+                        title="Net Sales: reflect the gross revenue generated less sales returns, allowances, and discounts."
+                        ><span style="cursor: help" class="not-must"
+                          >Net Sales (Sales less returns/discount)</span
+                        ></a
+                      >
+                    </h5>
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Net-Sales-Year1"
+                    />
+                  </div>
+                  <div class="col-3 m-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Net-Sales-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Cost of Sales: the cost of acquiring or manufacturing the products that a company sells during a period."
+                      ><span style="cursor: help" class="not-must"
+                        >Cost of Sales</span
+                      ></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Cost-of-Sales-Year1"
+                    />
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Cost-of-Sales-Year2"
+                    />
+                  </div>
+                </div>
+
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <h5>
+                      <a title="Gross Profit: Total sales less cost of sales."
+                        ><span style="cursor: help" class="not-must"
+                          >Gross Profit</span
+                        ></a
+                      >
+                    </h5>
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Gross-Profit-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Gross-Profit-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <!-- operating expenses -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-2"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto">
+                    <h5>
+                      <a
+                        title="Operating Expenses: Expenses incurred through normal business operations."
+                        ><span style="cursor: help" class="not-must"
+                          >Operating Expenses</span
+                        >
+                      </a>
+                    </h5>
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Operating-Expenses-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Operating-Expenses-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Rent</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Rent-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Rent-Year2"
+                    />
+                  </div>
+                </div>
+
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Salaries/Wages</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Salaries-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Salaries-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Entertainment</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Entertainment-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Entertainment-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Insurance</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Insurance-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Insurance-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Advertising</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Advertising-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Advertising-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Depreciation</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Depreciation-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Depreciation-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Bad Debt Expense</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Bad-Debt-Expense-Year1"
+                    />
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Bad-Debt-Expense-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">Other Operating Expense</div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Other-Operating-Expense-Year1"
+                    />
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Other-Operating-Expense-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- bottom of operating expenses -->
+
+                <!-- incomes -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <div class="col-4 me-auto px-2">
+                    <h4>
+                      <a
+                        title="Operating Income: Expenses incurred by a business through normal business operations."
+                        ><span class="not-must" style="cursor: help">
+                          Operating Income
+                        </span></a
+                      >
+                    </h4>
+                  </div>
+
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Operating-Income-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Operating-Income-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <div class="col-4 me-auto px-2">
+                    <h4>Other Income (outside normal operating income)</h4>
+                  </div>
+
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Other-Income-Year1"
+                    />
+                  </div>
+                  <div class="col-3 m-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Other-Income-Year2"
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-3"></div>
+                  <!-- finance cost -->
+                  <div class="col-4 me-auto"><h5>Finance Cost</h5></div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Finance-Cost-Year1"
+                      readonly
+                    />
+                  </div>
+
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Finance-Cost-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Interest Income: Earnings generated by investments such as savings accounts and certificates of deposit."
+                      ><span class="not-must" style="cursor: help">
+                        Interest Income
+                      </span></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Interest-Income-Year1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Interest-Income-Year2"
+                    />
+                  </div>
+                </div>
+
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Interest Expense: the cost of borrowing money including a company's interest payments on any bonds, loans, convertible debt, and lines of credit."
+                      ><span class="not-must" style="cursor: help">
+                        Interest Expense
+                      </span></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Interest-Expense-Year1"
+                    />
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Interest-Expense-Year2"
+                    />
+                  </div>
+                </div>
+                <!-- bottom of financial cost -->
+
+                <!--Income before tax -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-2"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto"><h5>Income Before Tax</h5></div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Income-Before-Tax-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Income-Before-Tax-Year2"
+                      readonly
+                    />
+                  </div>
+                </div>
+                <div class="row m-2">
+                  <div class="col-4 me-auto px-4">
+                    <a
+                      title="Income Tax: Corporate tax waged on company profits."
+                      ><span class="not-must" style="cursor: help">
+                        Income Tax
+                      </span></a
+                    >
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Income-Tax-Year1"
+                    />
+                  </div>
+                  <div class="col-3 me-auto">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Income-Tax-Year2"
+                    />
+                  </div>
+                </div>
+
+                <!-- Net income -->
+                <div class="row m-2">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-2"></div>
+                  <!-- current assets -->
+                  <div class="col-4 me-auto"><h5>Net Income</h5></div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year1 Net-Income-Year1"
+                      readonly
+                    />
+                  </div>
+                  <div class="col-3 me-auto align-self-baseline">
+                    <input
+                      required
+                      type="number"
+                      class="form-control Year2 Net-Income-Year2"
+                      readonly
+                    />
+                  </div>
+                  <!-- bottom of income statement -->
+                </div>
+                <!-- bottom of income statementinput -->
+                <div class="row">
+                  <!-- 隔离线 -->
+                  <div class="w-100 m-5"></div>
+                  <div class="row justify-content-center Input-Submit-Area">
+                    <button
+                      type="reset"
+                      class="btn btn-danger m-auto col-2 btn-Clear-All-Financial"
+                    >
+                      Clear all</button
+                    ><button
+                      type="button"
+                      class="btn btn-primary m-auto col-2 btn-Submit-Financial"
+                    >
+                      Submit
+                    </button>
+                    <div
+                      class="modal fade modal-Alert-Msg"
+                      style="display: none"
+                      id="inputAlertMsg"
+                      data-bs-backdrop="static"
+                      data-bs-keyboard="false"
+                      tabindex="-1"
+                      aria-labelledby="inputAlertMsgLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5
+                              class="modal-title bg-danger"
+                              id="inputAlertMsgLabel"
+                            >
+                              Data Not Complete
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close btn-alert-msg-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            It seems some of your inputs are left blank. For
+                            accurate analysis, we strongly suggest you to
+                            recheck your input!
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary btn-Recheck-Data"
+                              data-bs-dismiss="modal"
+                            >
+                              Recheck Data
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-primary btn-Submit-Anyway"
+                              data-bs-dismiss="modal"
+                            >
+                              Confirm Submit
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- <button
+                      type="button"
+                      class="btn btn-primary m-auto col-2 btn-Next-Financial"
+                    >
+                      > Next
+                    </button> -->
+                    <button
+                      class="btn btn-primary m-auto col-2"
+                      onclick="Return()"
+                    >
+                      Home Page
+                    </button>
+                    <button
+                    class="btn btn-primary m-auto col-2"
+                    onclick="createPDF()"
+                  >
+                    createPDF
+                  </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- bottom of balance sheet -->
+            </form>
+          </div>
+
+          <div class="row col-6 rounded-3"></div>
+          <!--data display area after user input -->
+          <div class="report-preview d-none">
+            <div><h1>Financial Table Preview</h1></div>
+            <div class="General-Information-Report">
+              <h2>General Information</h2>
+              <div class="Insert-Area Company-Information-Report"></div>
+              <div class="Insert-Area Financial-Information-Report"></div>
+            </div>
+            <div class="Financial-Report">
+              <h2>Financial Report Preview</h2>
+              <div>
+                <h2>Balance Sheet</h2>
+                <div class="table-responsive-xxl Balance-Sheet-Report">
+                  <table
+                    class="table table-striped table-hover Insert-Area Balance-Sheet-Report-Head"
+                  >
+                    <thead></thead>
+                    <tbody
+                      class="Insert-Area Balance-Sheet-Report-Body"
+                    ></tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h2>Income Statement</h2>
+                <div class="table-responsive-xxl Income-Statement-Report">
+                  <table
+                    class="table table-striped table-hover Insert-Area Income-Statement-Report-Head"
+                  >
+                    <thead></thead>
+                    <tbody
+                      class="Insert-Area Income-Statement-Report-Body"
+                    ></tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h2>Financial Ratios</h2>
+
+                <div class="table-responsive-xxl Financial-Ratios-Report">
+                  <h3>Solvency Ratios</h3>
+                  <table
+                    class="table table-striped table-hover Insert-Area Solvency Financial-Ratios-Report-Head"
+                  >
+                    <thead></thead>
+                    <tbody
+                      class="Insert-Area Solvency Financial-Ratios-Report-Body"
+                    ></tbody>
+                  </table>
+                  <h3>Liquidity Ratios</h3>
+                  <table
+                    class="table table-striped table-hover Insert-Area Liquidity Financial-Ratios-Report-Head"
+                  >
+                    <thead></thead>
+                    <tbody
+                      class="Insert-Area Liquidity Financial-Ratios-Report-Body"
+                    ></tbody>
+                  </table>
+                  <h3>Profitability Ratios</h3>
+                  <table
+                    class="table table-striped table-hover Insert-Area Profitability Financial-Ratios-Report-Head"
+                  >
+                    <thead></thead>
+                    <tbody
+                      class="Insert-Area Profitability Financial-Ratios-Report-Body"
+                    ></tbody>
+                  </table>
+                  <h3>Activity Ratios</h3>
+                  <table
+                    class="table table-striped table-hover Insert-Area Activity Financial-Ratios-Report-Head"
+                  >
+                    <thead></thead>
+                    <tbody
+                      class="Insert-Area Activity Financial-Ratios-Report-Body"
+                    ></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of .row -->
+      </div>
+      <!--end of .d-flex flex-column -->
+      <div id="chartContainer">
+      <canvas id="chart-space-1"></canvas>
+      <canvas id="chart-space-2"></canvas>
+      <canvas id="chart-space-3"></canvas>
+      <canvas id="chart-space-4"></canvas>
+      <canvas id="chart-space-5"></canvas>
+      <canvas id="chart-space-6"></canvas>
+      </div>
+    </div>
+    <!-- end of  .container -->
+    <!-- include all necessary js files -->
+
+
+    <script src="./js/config.js"></script>
+    <script src="./js/helper.js"></script>
+    <script src="./js/dataModel.js"></script>
+    <script src="./js/views/View.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="./js/Raleway-Light-normal.js"></script>
+    <script src="./js/app.js"></script>
+
+<!-- 
+    <script>
+
+      const ctx = document.getElementById('chart-space-6').getContext('2d');
+      
+      const myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                  label: '# of Votes',
+                  data: [5, 5, 3, 5, 2, 3],
+                  backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(153, 102, 255, 0.2)',
+                      'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)',
+                      'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+      
+      
+      </script>
+   -->       
+  <!-- Template Main JS File -->
+  <!-- <script src="/js/main.js"></script> -->
+
+
+  </body>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+</html>

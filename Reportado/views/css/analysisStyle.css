@@ -1,0 +1,718 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem; */
+}
+
+/* below: added from style.css to same formatted headings - erase comment if needed */
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: #106eea;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #fff;
+  padding: 0;
+}
+#topbar .contact-info i {
+  font-style: normal;
+  color: #fff;
+}
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+  padding-left: 5px;
+  color: #fff;
+}
+#topbar .contact-info i a {
+  line-height: 0;
+  transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+#topbar .contact-info i a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+#topbar .social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  transition: 0.3s;
+  margin-left: 20px;
+}
+#topbar .social-links a:hover {
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  transition: all 0.5s;
+  z-index: 997;
+  height: 86px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#header.fixed-top {
+  height: 70px;
+}
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  font-family: 'Poppins', sans-serif;
+}
+#header .logo a {
+  color: #222222;
+}
+#header .logo a span {
+  color: #106eea;
+}
+#header .logo img {
+  max-height: 70px;
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar > ul > li {
+  white-space: nowrap;
+  padding: 10px 0 10px 28px;
+}
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222222;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #106eea;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: #106eea;
+}
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 28px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+.navbar .dropdown ul li {
+  min-width: 200px;
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-weight: 400;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
+  color: #106eea;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #222222;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(9, 9, 9, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #222222;
+}
+.navbar-mobile > ul > li {
+  padding: 0;
+}
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover > a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #106eea;
+}
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #106eea;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #106eea;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #3284f1;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* above: added from style.css to same formatted headings - erase comment if needed */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.welcome {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.logo {
+  height: 5.25rem;
+}
+
+.login {
+  display: flex;
+}
+
+.login__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  text-align: center;
+  width: 13rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: inherit;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.login__input:focus {
+  outline: none;
+  border: 1px solid #ccc;
+}
+
+.login__input::placeholder {
+  color: #bbb;
+}
+
+.login__btn {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: #777;
+}
+
+/* MAIN */
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 20rem repeat(4, 20rem) auto;
+  gap: 2rem;
+
+  /* NOTE This creates the fade in/out anumation */
+  opacity: 100;
+  transition: all 1s;
+}
+
+.balance {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.balance__label {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: -0.2rem;
+}
+
+.balance__date {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.balance__value {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+/* I have adjusted the Statement to be 70%  -- previously 50% - too small*/
+.col-6 {
+  flex: 0 0 auto;
+  width: 70%;
+}
+
+/* MOVEMENTS */
+.movements {
+  grid-row: 2 / span 3;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.movements__row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.movements__type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.movements__date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #666;
+}
+
+.movements__type--deposit {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.movements__type--withdrawal {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.movements__value {
+  font-size: 1.7rem;
+  margin-left: auto;
+}
+
+/* SUMMARY */
+.summary {
+  grid-row: 5 / 6;
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.3rem;
+  margin-top: 1rem;
+}
+
+.summary__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 0.8rem;
+}
+
+.summary__value {
+  font-size: 2.2rem;
+  margin-right: 2.5rem;
+}
+
+.summary__value--in,
+.summary__value--interest {
+  color: #66c873;
+}
+
+.summary__value--out {
+  color: #f5465d;
+}
+
+.btn--sort {
+  margin-left: auto;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* OPERATIONS */
+
+.operation {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+  background-image: linear-gradient(to top left, #aaaaaa, #bbbbbb);
+}
+.input--company {
+  background-image: linear-gradient(to top left, #aaaaaa, #bbbbbb);
+}
+.input--company-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+.form--company-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+sub {
+  vertical-align: sub;
+  font-size: xx-small;
+  color: red;
+}
+
+/*Remove increase/decrease (stepper) on Input tag - for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input--basic-financial-info {
+  background-image: linear-gradient(to top left, #aaaaaa, #bbbbbb);
+}
+.input--balance-sheet {
+  background-image: linear-gradient(to top left, #aaaaaa, #bbbbbb);
+}
+
+.input--income-statement {
+  background-image: linear-gradient(to top left, #aaaaaa, #bbbbbb);
+}
+
+.input--others {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0.4rem 1rem;
+}
+
+/* Exceptions for interst */
+/* .form.form--loan {
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+.form__label--loan {
+  grid-row: 2;
+}
+/* End exceptions */
+
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.3s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.form__label {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form__btn:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form__btn--confirm {
+  grid-row-start: 4;
+}
+.form__btn--restart {
+  grid-row-start: 4;
+  grid-column-start: 2;
+}
+.logout-timer {
+  padding: 0 0.3rem;
+  margin-top: 1.9rem;
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.timer {
+  font-weight: 600;
+}
+
+/* add * before compulsory input */
+span[style='cursor: help']::before {
+  content: '*';
+}
+span[class~='must']::before {
+  content: '*';
+}
+span[class~='not-must']::before {
+  content: '';
+}
+.Activity.Financial-Ratios-Report-Body tr th h4::after {
+  content: ' (days)';
+  color: #000000;
+}
+
+.Profitability.Financial-Ratios-Report-Body tr th h4::after {
+  content: ' (%)';
+  color: #000000;
+}
+
+.Liquidity.Financial-Ratios-Report-Body tr th h4::after {
+  content: ' (:1)';
+  color: #000000;
+}
+
+.Solvency.Financial-Ratios-Report-Body tr th h4::after {
+  content: ' (factor)';
+  color: #000000;
+}
+input + a,
+select + a {
+  width: 50%;
+}
+
+canvas {
+  margin-left: 0vh;
+  margin-right: 30vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.Input-Company-Info
+{
+  font-size: 0.8vw;
+}
+.btn {
+  font-size: 0.6vw;
+}
