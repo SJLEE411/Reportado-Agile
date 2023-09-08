@@ -28,3 +28,6 @@ How to use this financial analysis tool:
   - This will populate the data on the website 
   - Select and Confirm Submit to produce you PDF Analysis output
 
+This is a semester long project from University of London: Agile Software Development Course.
+Team achieved 97% as final grade.
+
