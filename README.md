@@ -1,5 +1,6 @@
 # AgileSoftware2022_Credit
 
+<img src= "https://github.com/SJLEE411/Reportado-Agile/blob/main/Reportado/views/sampleimg.png" alt="sample image">
 Welcome to Reportado Financial Analysis tool.
 
 Our website introduces our Software team, but more importantly - on our analysis page we hope to deliver a financial solution to SMEs who need a professional financial solution.
